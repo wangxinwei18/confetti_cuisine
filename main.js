@@ -22,19 +22,12 @@ const express = require("express"),
 //     { useNewUrlParser: true, useUnifiedTopology: true }
 // );
 
-// mongoose.connect(
-//     process.env.MONGODB_URI || "mongodb+srv://confetti_cuisine:abcdef1234@cluster0.21gh5.mongodb.net/confetti_cuisine",
-//     { useNewUrlParser: true, useFindAndModify: false,
-//       useUnifiedTopology: true
-//     }
-// );
-
 mongoose.connect(
-        process.env.MONGODB_URI || "mongodb://localhost:27017/confetti_cuisine",
-        { useNewUrlParser: true, useFindAndModify: false,
-          useUnifiedTopology: true
-        }
-    );
+    process.env.MONGODB_URI || "mongodb+srv://confetti_cuisine:abcdef1234@cluster0.21gh5.mongodb.net/confetti_cuisine",
+    { useNewUrlParser: true, useFindAndModify: false,
+      useUnifiedTopology: true
+    }
+);
 
 mongoose.set("useCreateIndex", true);
 
